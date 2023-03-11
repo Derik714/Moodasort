@@ -1,0 +1,36 @@
+.navbar{
+    display: flex;
+    position: sticky;
+    top:0;
+    flex-direction: row;
+   
+}
+.right{
+    position:absolute;
+    right: 13px;
+    border: 3px solid red;
+}
+.mid{
+    position: relative;
+    border: 5px solid green;
+    width:1000px;
+    margin:0px auto;
+    text-decoration: none;
+    text-align: center;
+    display:inline-block;
+     box-sizing: border-box;
+}
+.mid ul {
+    list-style: none;
+}
+.mid ul a{
+    text-decoration: none;
+}
+.mid ul li{
+    display: inline;
+    padding:14px;
+    font-size: larger;
+}
+body{
+    
+}
