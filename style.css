@@ -2,17 +2,17 @@
     display: flex;
     position: sticky;
     top:0;
+    width: 1890px;
     flex-direction: row;
-   
-}
-.right{
-    position:absolute;
-    right: 13px;
-    border: 3px solid red;
+    background-color: rgb(62, 6, 6);
+    border-bottom: 4px solid rgb(198, 198, 0);
+   align-items: center;
+   border-radius: 20px;
+   opacity: 0.846;
+  
 }
 .mid{
     position: relative;
-    border: 5px solid green;
     width:1000px;
     margin:0px auto;
     text-decoration: none;
@@ -28,9 +28,118 @@
 }
 .mid ul li{
     display: inline;
-    padding:14px;
-    font-size: larger;
+    padding:30px;
+    font-size: 24px;
+    text-decoration: none;
+}
+.mid ul li a{
+    color:rgb(255, 255, 255);
+    
+    box-sizing: border-box;
+    
+   
+    
+}
+.mid ul li a:hover{
+    background-color: gray;
+    border:2px solid gray;
+    border-radius: 30px;
+   
+}
+.mid ul li a:active{
+    background-color: blueviolet;
 }
 body{
     
+    width:auto;
+background-color: rgb(106, 45, 163);
+background-repeat: no-repeat;
+background-size: cover;
+background-image: url(pexels-dmitry-demidov-3783471.jpg);
+background-blend-mode:multiply;
+}
+
+.left{
+    display: flex;
+}
+.left img{
+    width:84px;
+    height: 84px;
+}
+.background img{
+    width:1500px;
+    height:1500px;
+    display:block;
+    margin:860px auto;    
+    opacity: 0.7;
+    
+}
+.bottomcontainer{
+    display:block;
+    background-color: white;
+    opacity: 0.68;
+    position:absolute;
+    height:200px;
+    width:200px;
+    border-radius: 400px;
+    align-items: center;
+    bottom:259px;
+    right:0px;
+    margin-top: 5px;
+    padding-top: 5px;
+    background-image: url(collage\ 1.jpg);
+    background-size:cover;
+}
+.bottomcontainer ul{
+    justify-content: center;
+    text-align: center;
+}
+.bottomcontainer2{
+    display:block;
+    background-color: white;
+    opacity: 0.68;
+    position:absolute;
+    height:200px;
+    width:200px;
+    border-radius: 400px;
+    bottom:59px;
+    right:0px;
+    margin:0px auto;
+    background-image:url(collage\ 4.jpg);
+    background-size:cover;
+  
+}
+.bottomcontainer3{
+    display:block;
+    background-color: white;
+    opacity: 0.68;
+    position:absolute;
+    height:200px;
+    width:200px;
+    border-radius: 400px;
+    align-items: center;
+    right:0px;
+    margin-top: 5px;
+    padding-top: 5px;
+    background-image: url(collage\ 6.jpg);
+    background-size: cover;
+}
+.bottomcontainer4{
+    display:block;
+    background-color: white;
+    opacity: 0.68;
+    position:absolute;
+    height:200px;
+    width:200px;
+    border-radius: 400px;
+    align-items: center;
+    right:0px;
+    top:305px;
+    margin-top: 5px;
+    padding-top: 5px;
+    background-image: url(collage\ 5.jpg);
+    background-size: cover;
+}
+.containers{
+    opacity:0.5;
 }
