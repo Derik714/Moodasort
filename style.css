@@ -1,145 +1,178 @@
-.navbar{
-    display: flex;
-    position: sticky;
-    top:0;
-    width: 1890px;
-    flex-direction: row;
-    background-color: rgb(62, 6, 6);
-    border-bottom: 4px solid rgb(198, 198, 0);
-   align-items: center;
-   border-radius: 20px;
-   opacity: 0.846;
-  
+*{
+    margin:0;
+    padding: 0;
 }
-.mid{
-    position: relative;
-    width:1000px;
-    margin:0px auto;
-    text-decoration: none;
-    text-align: center;
-    display:inline-block;
-     box-sizing: border-box;
+.header{
+    min-height: 100vh;
+    width:100%;
+    background-image: linear-gradient(rgba(23, 4, 30, 0.7),rgba(30, 22, 4, 0.7)),url(Images/pexels-dmitry-demidov-3783471.jpg); 
+    background-position: center;
+    background-size: cover;
+    position:relative;
 }
-.mid ul {
-    list-style: none;
+nav{
+    display:flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Sono', sans-serif;
 }
-.mid ul a{
-    text-decoration: none;
-}
-.mid ul li{
-    display: inline;
-    padding:30px;
-    font-size: 24px;
-    text-decoration: none;
-}
-.mid ul li a{
-    color:rgb(255, 255, 255);
+nav img{
+    width:100px;
+    position:absolute;
+    left:6vh;
+    top:vh;
     
+}
+.nav-links{
+    flex: 1;
+    text-align:right;
+
+}
+.nav-links ul li{
+    list-style: none;
+    display:inline-block;
+    padding:8px 12px;
+    position:relative;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color:white;
+    
+}
+.nav-links ul li::after{
+    content: '';
+    width:0%;
+    height:2px;
+    background: #ffffff;
+    display:block;
+    margin: auto;
+    transition:0.5s;
+}
+.nav-links ul li:hover::after{
+    width:100%;
+}
+.text-box{
+    width:90%;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size:62px;
+    
+}
+.btns1{
+    display:inline-block;
+    text-decoration: none;
+    color:white;
+    border:1px solid white;
+    padding:12px 34px;
+    font-size: 13px;
+    background:transparent;
+    cursor:pointer;
+    position: relative;
+    font-family:'Sono';
+}
+.btns1:hover{
+    border:1px solid rgb(113, 11, 11);
+    background-color: brown;
+    transition: 0.5s;
+}
+.btns1:active{
+    border:1px solid rgb(40, 8, 167);
+    background-color: rgb(82, 20, 188);
+    transition: 0.5s;
+}
+nav .fa{
+    display:none;
+}
+@media(max-width:700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links ul li a{
+        font-size: small;
+    }
+    .nav-links{
+        position:absolute;
+        background: linear-gradient(rgba(185, 4, 4, 0.7), rgb(99, 2, 2), rgb(75, 2, 2), rgba(0, 0, 0, 0.6));
+        height: 100vh;
+        width: 200px;
+        top:0;
+        right:-200px;
+        text-align: left;
+        z-index:2;
+        transition:1s;
+    }
+    nav .fa{
+        display:block;
+        color:#fff;
+        margin:10px;
+        font-size:22px;
+        cursor:pointer;
+    }
+    .nav-links ul{
+        padding:30px;
+    }
+    html, body{
+        overflow-x: hidden;
+    }
+    
+}
+.course{
+    width:80%;
+    margin:auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size:36px;
+    font-weight:600;
+}
+#coursep{
+    color:#731b1b;
+    font-size:14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding:10px;
+}
+.row{
+    margin-top: 5%;
+    display:flex;
+    justify-content: space-between;
+    
+}
+.course-col{
+    flex-basis:31%;
+    background:linear-gradient(to bottom right,rgb(105, 105, 139,0.8),pink,rgba(255, 255, 0, 0.8));
+    border-radius:10px;
+    padding:20px 12px;
+    margin:5px;
     box-sizing: border-box;
     
-   
-    
 }
-.mid ul li a:hover{
-    background-color: gray;
-    border:2px solid gray;
-    border-radius: 30px;
-   
-}
-.mid ul li a:active{
-    background-color: blueviolet;
-}
-body{
-    
-    width:auto;
-background-color: rgb(106, 45, 163);
-background-repeat: no-repeat;
-background-size: cover;
-background-image: url(pexels-dmitry-demidov-3783471.jpg);
-background-blend-mode:multiply;
-}
-
-.left{
-    display: flex;
-}
-.left img{
-    width:84px;
-    height: 84px;
-}
-.background img{
-    width:1500px;
-    height:1500px;
-    display:block;
-    margin:860px auto;    
-    opacity: 0.7;
-    
-}
-.bottomcontainer{
-    display:block;
-    background-color: white;
-    opacity: 0.68;
-    position:absolute;
-    height:200px;
-    width:200px;
-    border-radius: 400px;
-    align-items: center;
-    bottom:259px;
-    right:0px;
-    margin-top: 5px;
-    padding-top: 5px;
-    background-image: url(collage\ 1.jpg);
-    background-size:cover;
-}
-.bottomcontainer ul{
-    justify-content: center;
+h3{
     text-align: center;
+    font-weight: 600;
+    margin:10px 0;
 }
-.bottomcontainer2{
-    display:block;
-    background-color: white;
-    opacity: 0.68;
-    position:absolute;
-    height:200px;
-    width:200px;
-    border-radius: 400px;
-    bottom:59px;
-    right:0px;
-    margin:0px auto;
-    background-image:url(collage\ 4.jpg);
-    background-size:cover;
-  
+.course-col:hover{
+   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.6);
+   transition: 0.6s;
+   cursor:pointer;
 }
-.bottomcontainer3{
-    display:block;
-    background-color: white;
-    opacity: 0.68;
-    position:absolute;
-    height:200px;
-    width:200px;
-    border-radius: 400px;
-    align-items: center;
-    right:0px;
-    margin-top: 5px;
-    padding-top: 5px;
-    background-image: url(collage\ 6.jpg);
-    background-size: cover;
-}
-.bottomcontainer4{
-    display:block;
-    background-color: white;
-    opacity: 0.68;
-    position:absolute;
-    height:200px;
-    width:200px;
-    border-radius: 400px;
-    align-items: center;
-    right:0px;
-    top:305px;
-    margin-top: 5px;
-    padding-top: 5px;
-    background-image: url(collage\ 5.jpg);
-    background-size: cover;
-}
-.containers{
-    opacity:0.5;
+@media(max-width:700px)
+{
+   .row{
+    flex-direction: column;
+    padding-top:5px;
+   } 
 }
