@@ -4,47 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moodasort | Play music to your moods</title>
+    <title>Responsive website practice</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sono:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <nav class = "navbar">
+     <section class ="header">
+        <nav>
+            <a href="index.html" target=><img src="Images/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideButton()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">ALL SONGS</a></li>
+                    <li><a href="">CONTACT US</a></li>
+                    <li><a href="">SONG HISTORY</a></li>
+                </ul>
+            </div>
+           <i class="fa fa-bars" onclick="showButton()"></i>
+        </nav>
+        <div class="text-box">
+         <h1>Best Playlist sorter</h1>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sit qui accusantium reiciendis, aspernatur perspiciatis eius tenetur? Distinctio molestias eius ipsum ducimus nihil. Deserunt, dolorem.</p>
+         <a href="" class="btns1">Visit us to know more</a>
+        </div>
        
-        <div class="left">
-              <span><img src="logo.png" alt="Moodasort" class="src">
-              </div></span> 
-        <div class="mid">
-               <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">All songs</a></li>
-                <li><a href="#">Contact Us</a></li>
-               </ul>
-        </div>
-        
-    </nav>
-    
-        <div class = "bottomcontainer">
-            <ul>
-                <li></li>
-            </ul>
-        </div>
-        <div class = "bottomcontainer2">
-            <ul>
-                <li></li>
-            </ul>
-        </div>
-        <div class = "bottomcontainer3">
-            <ul>
-                <li></li>
-            </ul>
-        </div>
-        <div class = "bottomcontainer4">
-            <ul>
-                <li></li>
-            </ul>
-    </div>
-    
-    
+     </section>
+     <script>
+        var navLinks=document.getElementById("navLinks");
+        function showButton()
+        {
+            navLinks.style.right="0";
+        }
+        function hideButton()
+        {
+            navLinks.style.right="-200px";
+        }
+     </script>
 </body>
 </html>
