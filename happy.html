@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moodasort | Happy Mood</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Style2.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+</head>
+</head>
+<body>
+    <section class="header2">
+        <nav>
+            <a href="index.html" target=><img src="Images/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" id="crossbutton" onclick="hideButton()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                </ul>
+            </div>
+           <i class="fa fa-bars" id="barbutton" onclick="showButton()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Happy Mood Music</h1>
+            <p>Happy mood music typically consists of upbeat, energetic songs with catchy melodies and positive lyrics that are designed to evoke feelings of joy and optimism in the listener. These types of songs often feature lively instrumentation, such as bright guitars, bouncy bass lines, and lively percussion, and can cover a wide range of genres, from pop and rock to electronic dance music (EDM) and even classical music.
+           </div>
+    </section>
+    <section class="KnowArtists" >
+        <h1>Here are some Artists that are well known for making Happy mood music</h1>
+        <p>You can click on the banners to visit their respective social media handles</p>
+        <div class="row">
+            <div class="mood-col">
+                <img src="Images/Justin T.jpg">
+                <h2>Justin Timberlake</h2>
+                <a class="YT" href="https://www.youtube.com/channel/UC-y8ci7xfsu4L3zkSuHae0A" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a> <a class="insta" href="https://www.instagram.com/justintimberlake/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a> <a class="twitterbird" href="https://twitter.com/jtimberlake" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+            <div class="mood-col">
+                <img class="DuaL" src="Images/Dua L.jpg">
+                <h2>Dua Lipa</h2>
+                <a class="YT" href="https://www.youtube.com/channel/UC-J-KZfRV8c13fOCkhXdLiQ" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a> <a class="insta" href="https://www.instagram.com/dualipa/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a> <a class="twitterbird" href="https://twitter.com/DUALIPA" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+            <div class="mood-col">
+                <img class ="Taylor" src="Images/TaylorSwift.jpg">
+                <h2>Taylor Swift</h2>
+                <a class="YT" href="https://www.youtube.com/@TaylorSwift" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a> <a class="insta" href="https://www.instagram.com/taylorswift/" target ="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a> <a class="twitterbird" href="https://twitter.com/taylorswift13" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+            <div class="mood-col">
+                <img class="Bruno" src="Images/BrunoMars.jpg">
+                <h2>Bruno Mars</h2>
+                <a class="YT" href="https://www.youtube.com/channel/UCoUM-UJ7rirJYP8CQ0EIaHA"><i class="fa fa-youtube-play" aria-hidden="true"></i></a> <a class="insta" href="https://www.instagram.com/brunomars/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a> <a class="twitterbird" href="https://twitter.com/BrunoMars" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+            
+            
+        </div>
+    </section>
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        var barbutton=document.getElementById("barbutton")
+        var crossbutton=document.getElementById("crossbutton")
+        function showButton()
+        {
+            navLinks.style.right="0";
+            barbutton.style.opacity=0;
+            crossbutton.style.opacity=1;
+        }
+        function hideButton()
+        {
+            navLinks.style.right="-200px";
+            barbutton.style.opacity=1;
+            crossbutton.style.opacity=0;
+        }
+     </script>
+</body>
+</html>
