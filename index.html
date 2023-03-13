@@ -4,50 +4,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive website practice</title>
+    <title>Moodasort | Best Playlist Sorter</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Sono:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
      <section class ="header">
         <nav>
-            <a href="index.html" ><img src="moodasort.png" alt="Moodasort" height="100"></a>
+            <a href="index.html" target=><img src="Images/logo.png" alt=""></a>
             <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" onclick="hideButton()"></i>
+                <i class="fa fa-times" id="crossbutton" onclick="hideButton()"></i>
                 <ul>
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">ABOUT US</a></li>
                     <li><a href="">ALL SONGS</a></li>
                     <li><a href="">CONTACT US</a></li>
                     <li><a href="">SONG HISTORY</a></li>
                 </ul>
             </div>
-           <i class="fa fa-bars" onclick="showButton()"></i>
+           <i class="fa fa-bars" id="barbutton" onclick="showButton()"></i>
         </nav>
         <div class="text-box">
-         <h1>Best Playlist sorter</h1>
-         <h3>Discover, Sort your Music playlists based on your current track's mood with MoodaSort</h3>
-         <h4>MoodaSort is a playlist generator that allows you to create a custom playlist that suit your mood and taste and will change the backgropund with your vibe</h4>
-         <br>
-         <a href="" class="btns1">Visit us to know more</a>
+         <h1>What is Moodasort?</h1>
+         <p>Moodasort is able to identify patterns and trends that correspond with specific moods, and can then suggest tracks that are most likely to resonate with the user's emotional state.
+            Overall, Moodasort represents a major breakthrough in the field of music curation and discovery, and is sure to revolutionize the way that people interact with their music libraries.</p>
+         <a href="" class="btns1">Click here to try</a>
         </div>
        
      </section>
+     <section class="KnowMoods">
+         <h1>Know about the different moods</h1>
+         <p>There are various kinds of moods according to which music can be sorted. Click on the banners below to learn about some moods</p> 
+         <div class="row">
+            <div class="mood-col">
+                <a href="happy.html"><img src="Images/Happy Girl.jpg"></a>
+                <h2>HAPPY</h2>
+            </div>
+            <div class="mood-col">
+                <a href=""><img src="Images/sad girl.jpg"></a>
+                <h2>SAD</h2>
+            </div>
+            <div class="mood-col">
+                <a href=""><img src="Images/romantic.jpg"></a>
+                <h2>ROMANTIC</h2>
+            </div>
+            <div class="mood-col">
+                <a href=""><img src="Images/Motivatonal.jpg"></a>
+                <h2>MOTIVATIONAL</h2>
+            </div>
+            
+        </div>
+     </section>
      <script>
         var navLinks=document.getElementById("navLinks");
+        var barbutton=document.getElementById("barbutton")
+        var crossbutton=document.getElementById("crossbutton")
         function showButton()
         {
             navLinks.style.right="0";
+            barbutton.style.opacity=0;
+            crossbutton.style.opacity=1;
         }
         function hideButton()
         {
-            navLinks.style.right="200px";
+            navLinks.style.right="-200px";
+            barbutton.style.opacity=1;
+            crossbutton.style.opacity=0;
         }
      </script>
-     <div class="ABOUT-US">
-        <h1>About Us</h1>
-     </div>
 </body>
 </html>
-
