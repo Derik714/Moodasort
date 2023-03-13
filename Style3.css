@@ -1,0 +1,81 @@
+.header2{
+    min-height: 100vh;
+    width:100%;
+    background-image: linear-gradient(rgba(41, 10, 44, 0.7),rgba(75, 73, 64, 0.7)),url(Images/sad1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+}
+.header2 p{
+    font-size: 23px;
+    line-height: 55px;
+}
+
+@media(max-width:600px)
+{
+    .header2 p{
+        font-size:15px;
+        line-height:26px;
+        
+    }
+}
+.KnowArtists{
+    width:80%;
+    margin:auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.KnowArtists h1{
+    font-size: 46px;
+    font-family: 'Dancing Script', cursive;
+
+}
+.KnowArtists p{
+    font-size: 20px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.row a{
+    text-decoration: none;
+}
+.YT{
+    color:red;
+    font-size: 35px;
+}
+.YT:hover{
+    color:rgb(122, 12, 12);
+}
+.YT:active{
+    color:gray;
+}
+.insta{
+    font-size:35px;
+}
+.insta:hover{
+    color:purple;
+}
+.insta:active{
+    color:gold;
+}
+.twitterbird{
+    font-size:35px;
+    color:rgb(29, 161, 242);
+}
+.twitterbird:hover{
+    color:rgb(5, 110, 152)
+}
+.twitterbird:active{
+    color:rgb(169, 216, 255);
+}
+.Alex{
+    height:350px;
+}
+.DuaL{
+    height:350px;
+}
+.Taylor{
+    height:350px;
+}
+.Bruno{
+    height:350px;
+}
