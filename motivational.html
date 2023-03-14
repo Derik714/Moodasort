@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moodasort | Motivational Mood</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style5.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+</head>
+</head>
+<body>
+    <section class="header2">
+        <nav>
+            <a href="index.html" target=><img src="Images/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" id="crossbutton" onclick="hideButton()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                </ul>
+            </div>
+           <i class="fa fa-bars" id="barbutton" onclick="showButton()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Motivational Mood Music</h1>
+            <p>Motivational Music has its deepest effect on those who are prepared to listen to it. If you listen carefully to the necessary musical compositions, you can rise spiritually, feel inspired, and even tune in to the self-healing of the body as a whole. Beautiful sound stimulates intellectual activity, brings inspiration.
+                </p>
+            </div>
+    </section>
+    <section class="KnowArtists" >
+        <h1>Here are some Artists that are well known for making Happy mood music</h1>
+        <br>
+        <p>You can click on the banners to visit their respective social media handles</p>
+        <div class="row">
+            <div class="mood-col">
+                <img class="justin" src="Images/Shankar.webp">
+                <h2>Shankar Mahadevan</h2>
+                <a class="YT" href="https://www.youtube.com/channel/UCxFitB8l4LwS4utyXWc8nQA" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a> <a class="insta" href="https://www.instagram.com/shankar.mahadevan/?hl=en" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a> <a class="twitterbird" href="https://twitter.com/Shankar_Live?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+            <div class="mood-col">
+                <img class="DuaL" src="Images/kelly.webp">
+                <h2>Kelly Clarkson</h2>
+                <a class="YT" href="https://www.youtube.com/channel/UCoRUmyNL8KEYftmxRA2n3SQ" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a> <a class="insta" href="https://www.instagram.com/kellyclarkson/?hl=en" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a> <a class="twitterbird" href="https://twitter.com/KellyClarkson" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+            <div class="mood-col">
+                <img class ="Taylor" src="Images/alan.webp">
+                <h2>Alan Walker</h2>
+                <a class="YT" href="https://www.youtube.com/channel/UCJrOtniJ0-NWz37R30urifQ" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a> <a class="insta" href="https://www.instagram.com/alanwalkermusic/?hl=en" target ="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a> <a class="twitterbird" href="https://twitter.com/IAmAlanWalker?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+            <div class="mood-col">
+                <img class="Bruno" src="Images/sukhwinder.jpg">
+                <h2>Sukhwinder Singh</h2>
+                <a class="YT" href="https://www.youtube.com/c/SukhwinderSinghOfficial/join"><i class="fa fa-youtube-play" aria-hidden="true"></i></a> <a class="insta" href="https://www.instagram.com/sukhwindersinghofficial/?hl=en" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a> <a class="twitterbird" href="https://twitter.com/sukhwindermusic?lang=en" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+            
+            
+        </div>
+    </section>
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        var barbutton=document.getElementById("barbutton")
+        var crossbutton=document.getElementById("crossbutton")
+        function showButton()
+        {
+            navLinks.style.right="0";
+            barbutton.style.opacity=0;
+            crossbutton.style.opacity=1;
+        }
+        function hideButton()
+        {
+            navLinks.style.right="-200px";
+            barbutton.style.opacity=1;
+            crossbutton.style.opacity=0;
+        }
+     </script>
+</body>
+</html>
