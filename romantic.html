@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moodasort | Romantic Mood</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style4.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+</head>
+</head>
+<body>
+    <section class="header2">
+        <nav>
+            <a href="index.html" target=><img src="Images/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" id="crossbutton" onclick="hideButton()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                </ul>
+            </div>
+           <i class="fa fa-bars" id="barbutton" onclick="showButton()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Romantic Mood Music</h1>
+            <p>To create a romantic mood, the setting needs to be beautiful, bright and carefree. This can be a candlelit dinner, a picnic on a beach, or sailing into the sunset.</p>
+            </div>
+    </section>
+    <section class="KnowArtists" >
+        <h1>Here are some Artists that are well known for making Romantic mood music</h1>
+        <br>
+        <p>You can click on the banners to visit their respective social media handles</p>
+        <div class="row">
+            <div class="mood-col">
+                <img class="justin" src="Images/kk.jpg">
+                <h2>Krishnakumar Kunnath(KK)</h2>
+                <a class="YT" href="https://youtu.be/ADmCN-53gQw" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a> <a class="insta" href="https://www.instagram.com/kk_live_now/?hl=en" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a> <a class="twitterbird" href="https://twitter.com/K_K_Pal" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+            <div class="mood-col">
+                <img class="DuaL" src="Images/ed.jpg">
+                <h2>ED Sheeran</h2>
+                <a class="YT" href="https://www.youtube.com/channel/UC0C-w0YjGpqDXGB8IHb662A" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a> <a class="insta" href="https://www.instagram.com/teddysphotos/?hl=en" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a> <a class="twitterbird" href="https://www.youtube.com/redirect?event=channel_banner&redir_token=QUFFLUhqbkVqUUFfcWk0ei1sbDFEOHk3RmdMc3VCM2JxUXxBQ3Jtc0trRFZ6OEtnT2hPTUYtS00wejFvdzN5amNxRm5xLU9nQkw0U29ZSExUY0dET2I5RnNPQjZZZUFKSEVTd3cwOVp2M084d3NhZkVDQW8tNEtmT1pKc0FfM3FhWjlIQUo3Q3l2ellYY0NzbzRsNDh3ZEhFTQ&q=http%3A%2F%2Ftwitter.com%2Fedsheeran" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+            <div class="mood-col">
+                <img class="DuaL" src="Images/arijit1.jpg">
+                <h2>Arijit Singh</h2>
+                <a class="YT" href="https://youtu.be/rNhW1KwjqJw" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a> <a class="insta" href="https://www.instagram.com/arijitsingh/?hl=en" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a> <a class="twitterbird" href="https://twitter.com/arijitsingh?lang=en" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+            <div class="mood-col">
+                <img class="Bruno" src="Images/shreya.jpg">
+                <h2>Shreya Ghoshal</h2>
+                <a class="YT" href="https://www.youtube.com/channel/UCcL78rRNuUQ8t7Dx4CLmRqA"><i class="fa fa-youtube-play" aria-hidden="true"></i></a> <a class="insta" href="https://www.instagram.com/shreyaghoshal/?hl=en" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a> <a class="twitterbird" href="https://twitter.com/shreyaghoshal?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+            
+            
+        </div>
+    </section>
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        var barbutton=document.getElementById("barbutton")
+        var crossbutton=document.getElementById("crossbutton")
+        function showButton()
+        {
+            navLinks.style.right="0";
+            barbutton.style.opacity=0;
+            crossbutton.style.opacity=1;
+        }
+        function hideButton()
+        {
+            navLinks.style.right="-200px";
+            barbutton.style.opacity=1;
+            crossbutton.style.opacity=0;
+        }
+     </script>
+</body>
+</html>
