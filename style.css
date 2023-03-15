@@ -212,3 +212,113 @@ html{
         font-size: 14px;
     }
 }
+.contactUs{
+    margin:auto;
+    width:80%;
+    min-height:75vh;
+    background:linear-gradient(rgba(8, 35, 98, 0.6),rgba(5, 105, 39, 0.525)),url(Images/work\ background.jpg);
+    background-size:cover;
+    border: 5px solid rgb(6, 6, 8);
+    border-radius: 40px;
+    
+}
+.container{
+    margin:5% 15%;
+    position: absolute;
+}
+.container h1{
+    font-size: 55px;
+    font-family: 'Times New Roman';
+    background: linear-gradient(to top left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    border-radius: 35px;
+    color: rgb(255, 255, 255);
+    font-style:bold;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.container p{
+    font-size: 35px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bolder;
+    color:rgb(255, 255, 255);
+}
+.contact-box{
+    flex-basis: 50%;
+    margin-top: 20px;
+    align-items: flex-start;
+}
+.input-row{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.input-group .input-group{
+   flex-basis: 45%;
+}
+.input-group label{
+    font-size: 30px;
+    font-weight: lighter;
+    font-family: 'Times New Roman';
+    color:aliceblue;
+}
+input{
+    width:55vh;
+    border-bottom:1px solid #ccc;
+    padding-bottom:5px;
+    font-size: 28px;
+    box-shadow: 0 0 15px 0 rgb(3, 0, 0, 0.7);
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+textarea{
+    border-radius: 5px;;
+    width:95%;
+    font-size: large;
+    text-align: left;
+    outline: none;
+    box-shadow: 0 0 ;
+    font-size: 25px;
+}
+.btn{
+    margin:5px auto;
+    position:absolute;
+   font-size: 25px;
+   border-radius: 17px;
+   width:20%;
+   font-family:'Sono';
+}
+.btn:hover{
+    cursor:pointer;
+    background-color: bisque;
+    
+}
+@media(max-width:700px)
+{
+    .container h1{
+        font-size: 26px;
+    }
+    .container p{
+        font-size: larger;
+    }
+    .input-row{
+        display:block;
+        
+    }
+    input{
+        width:100%;
+        font-size: 10px;
+    }
+    .input-group label{
+        font-size:x-large;
+    }
+    .btn{
+        font-size:15px;
+        border-radius: 10px;
+    }
+    .contactUs{
+        min-height: 100vh;
+        width:100%;
+    }
+}
