@@ -76,7 +76,8 @@ nav img{
     background:transparent;
     cursor:pointer;
     position: relative;
-    font-family:'Sono';
+    border-radius: 10px;
+    font-family: 'Cormorant Garamond', serif;
 }
 .btns1:hover{
     border:1px solid rgb(113, 11, 11);
