@@ -1,0 +1,46 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.Features{
+    min-height: 80vh;
+    width:100%;
+    background-image: linear-gradient(rgba(186, 186, 180, 0.7),rgba(30, 22, 4, 0.7)),url(Classic.jpg); 
+    background-position: center;
+    background-size: cover;
+    position:relative;
+}
+.row{
+    display:flex;
+    height:88%;
+    align-items:center;
+}
+.col{
+    flex-basis: 50%;
+}
+h1{
+color:rgb(7, 7, 7);
+font-size: 90px;
+font-family: 'Playfair Display';
+}
+h3{
+color:rgb(13, 13, 14);
+font-size: 50px;
+text-align: right;
+font-family: sans-serif;
+}
+p{
+    color:rgb(12, 12, 12);
+    font-size: 40px;
+    text-align: right;
+}
+.card{
+    height: 350px;
+    width:400px;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    background-image: url(A.webp); 
+    background-size: cover;
+    float: left;
+}
