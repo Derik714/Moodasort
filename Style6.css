@@ -5,7 +5,7 @@
 .Features{
     min-height: 80vh;
     width:100%;
-    background-image: linear-gradient(rgba(186, 186, 180, 0.7),rgba(30, 22, 4, 0.7)),url(Classic.jpg); 
+    background-image: linear-gradient(rgba(186, 186, 180, 0.7),rgba(30, 22, 4, 0.7)),url(Images/Classic.jpg); 
     background-position: center;
     background-size: cover;
     position:relative;
@@ -40,7 +40,7 @@ p{
     border-radius: 10px;
     padding: 15px 25px;
     box-sizing: border-box;
-    background-image: url(A.webp); 
+    background-image: url(Images/A.webp); 
     background-size: cover;
     float: left;
 }
