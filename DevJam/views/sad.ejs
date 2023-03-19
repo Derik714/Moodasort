@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moodasort | Sad Mood</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/Style2.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+</head>
+</head>
+<body>
+    <section class="header2" id="sad">
+        <nav>
+            <a href="/" target=><img src="images/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" id="crossbutton" onclick="hideButton()"></i>
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                </ul>
+            </div>
+           <i class="fa fa-bars" id="barbutton" onclick="showButton()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Sad Mood Music</h1>
+            <p>Sad music can typically be described as something slow, soft, somber, or music that makes you cry. We typically associate sad music with emotional film scenes, such as a death or major tragedy.</p>
+           </div>
+    </section>
+    <section class="KnowArtists" >
+        <h1>Here are some Artists that are well known for making Sad mood music</h1>
+        <br>
+        <p>You can click on the banners to visit their respective social media handles</p>
+        <div class="row">
+            <div class="mood-col">
+                <img class="First" src="images/alex_warren.jpg">
+                <h2>Alex Warren</h2>
+                <a class="YT" href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbnFNb0drOGtrZ2EzT3VCVktXdjZuRWlHUzh1Z3xBQ3Jtc0trQk8ya05KbVYtUTRIRUhFclA5V1hzbEhTTXBkLWNEd3pyRmh3TklNc3Z2UkN4QkZjdnZNTU5sdkNlbGZtTVp2NnhtRDlTTE9EWUxDdVhzRFpDWGVmR1hDbUNiaDNKRkMtZVVOdW5qc0kzTnBwUXBaSQ&q=https%3A%2F%2Falexwarren.lnk.to%2FYTSubscribe" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a> <a class="insta" href="https://www.youtube.com/redirect?event=channel_banner&redir_token=QUFFLUhqbFJEbVJPVmt5TC0xYlRqS1NVbGVvN09jQU91QXxBQ3Jtc0ttVkxJa1pMcDFTRnlzNEZGdDh3R0JlM2hYZUdFOS1xTGQwYm1ZUlZGQlhBR2NHSlVHSFgzdmdYaW9wbG45RW5GeWZILXVlUEdZUUJxR3lTX3RiRDRyZGxQQjFnUGJ2el9pZFd5LWJjNXNZVlduQmNIbw&q=https%3A%2F%2Fwww.instagram.com%2Falexwaarren%2F" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a> <a class="twitterbird" href="https://twitter.com/alexwaarren?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+            <div class="mood-col">
+                <img class ="Second" src="images/TaylorSwift.jpg">
+                <h2>Taylor Swift</h2>
+                <a class="YT" href="https://www.youtube.com/@TaylorSwift" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a> <a class="insta" href="https://www.instagram.com/taylorswift/" target ="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a> <a class="twitterbird" href="https://twitter.com/taylorswift13" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+            <div class="mood-col">
+                <img class="Third" src="images/arijit1.jpg">
+                <h2>Arijit Singh</h2>
+                <a class="YT" href="https://youtu.be/rNhW1KwjqJw" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a> <a class="insta" href="https://www.instagram.com/arijitsingh/?hl=en" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a> <a class="twitterbird" href="https://twitter.com/arijitsingh?lang=en" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+            <div class="mood-col">
+                <img class="Fourth" src="images/olivia.jpeg">
+                <h2>Olivia Rodrigo</h2>
+                <a class="YT" href="https://www.youtube.com/channel/UCy3zgWom-5AGypGX_FVTKpg"><i class="fa fa-youtube-play" aria-hidden="true"></i></a> <a class="insta" href="https://www.instagram.com/oliviarodrigo/?hl=en" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a> <a class="twitterbird" href="https://twitter.com/oliviarodrigo?lang=en" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+            
+            
+        </div>
+    </section>
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        var barbutton=document.getElementById("barbutton")
+        var crossbutton=document.getElementById("crossbutton")
+        function showButton()
+        {
+            navLinks.style.right="0";
+            barbutton.style.opacity=0;
+            crossbutton.style.opacity=1;
+        }
+        function hideButton()
+        {
+            navLinks.style.right="-200px";
+            barbutton.style.opacity=1;
+            crossbutton.style.opacity=0;
+        }
+     </script>
+</body>
+</html>

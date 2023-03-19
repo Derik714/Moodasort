@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main player</title>
+    <link rel="stylesheet" href="css/mainpage.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class ="header">
+        <nav>
+            <a><img src='images/logo.png' alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <ul>
+                   <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT US</a></li>
+                    <li><a href="">FEATURES</a></li>
+                    <li><a href="">CONTACT US</a></li>
+                </ul>
+            </div>
+        </nav>
+     </section>
+     <div class="foot">
+        <div class="slider">
+          <input type="range" min="0" max="100" value="50" id="Range">
+          <span class="current-time">00:00</span>
+          <span class="song-duration">00:00</span>
+        </div>
+           <div class="controlbtns">
+            <i class="fa fa-step-backward" id="backward"></i>  
+            <i class="fa fa-play" id="play"><img src="images/play.png" id="play"></i>
+            <i class="fa fa-step-forward" id="forward"></i>
+           </div>
+           
+       </div>
+     <section class="MoodBar">
+        <h1>Select your Mood</h1>
+       
+        <div class="sidepanel">
+         
+          <ul>
+            <li id="happy">HAPPY</li><i class="fa fa-chevron-right" aria-hidden="true"></i>
+            <li id="sad">SAD</li>
+            <li id ="romantic">ROMANTIC</li>
+            <li id ="motivational" >MOTIVATIONAL</li>
+          </ul>
+          
+        </div>
+        <audio>
+          <source src="" id="Song">
+        </audio>
+       
+     </section>
+     <script>
+      var currentMusic=0
+var song=document.querySelector('#Song')
+var button=document.querySelector('#button')
+var forward=document.querySelector('#forward')
+var backward=document.querySelector('#backward')
+var happy=document.querySelector('#happy')
+var sad=document.querySelector('#sad')
+var romantic=document.querySelector('#romantic')
+var motivational=document.querySelector('#motivational')
+var startTime=document.querySelector('.current-time')
+var musicDuration=document.querySelector('.song-duration')
+
+button.onclick=function(){
+      if(song.paused){
+        song.play();
+      icon.src="images/pause.png";
+      }
+    }
+
+     </script>
+     
+</body>
+</html>

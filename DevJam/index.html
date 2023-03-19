@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html llang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COmpatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+    <div class="music-player">
+      <h1 id="music-name">Song one</h1>
+      <p id="artist-name">artist</p>
+    <audio controls id="audio"><source src="musics/DreamLantern.mp3" type="audio/mp3"></audio>
+      <input type="range" value="0" id="seek-bar"> 
+      <span id="current-time">00:00</span>
+      <span id="song-duration">00:00</span>
+      </div>
+    </div>
+    <div class="controls">
+      <div ><img src="images/pre.png"id="previous"></div>
+      <div ><img src="images/play.png"id="play"></div>
+      <div ><img src="images/nxt.png"id="forward"></div>
+    </div>
+
+    <div class="sidepanel">
+         
+        <ul>
+          <li ><button><label id="happy">HAPPY</label></button></li><i class="fa fa-chevron-right" aria-hidden="true"></i>
+          <li><button><label id="sad">SAD</label></button></li>
+          <li ><button><label id="romantic">ROMANTIC</label></button></li>
+          <li ><button><label id="motivational">MOTIVATIONAL</label></button></li>
+        </ul>
+        
+      </div>
+    <script src="app.js"></script>
+  </body>
+</html>
