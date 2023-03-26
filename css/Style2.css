@@ -1,0 +1,93 @@
+.header2{
+    min-height: 100vh;
+    width:100%;
+     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+}
+#hap{
+    background-image: linear-gradient(rgba(9, 11, 41, 0.7),rgba(84, 95, 141, 0.7)),url(/images/hap.gif);
+
+}
+#sad{
+    background-image: linear-gradient(rgba(58, 55, 59, 0),rgba(75, 75, 70, 0)),url(/images/sad.gif);
+}
+#rom{
+    background-image: linear-gradient(rgba(9, 11, 41, 0.7),rgba(84, 95, 141, 0.7)),url(/images/rom.gif);
+}
+#mot{
+    background-image: linear-gradient(rgba(9, 11, 41, 0),rgba(84, 95, 141, 0)),url(/images/mot.gif);
+}
+.header2 p{
+    font-size: 29px;
+    line-height: 55px;
+}
+
+@media(max-width:700px)
+{
+    .header2 p{
+        font-size:15px;
+        line-height:26px;
+        
+    }
+}
+.KnowArtists{
+    width:80%;
+    margin:auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.KnowArtists h1{
+    font-size: 46px;
+    font-family: 'Dancing Script', cursive;
+
+}
+.KnowArtists p{
+    font-size: 20px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.row a{
+    text-decoration: none;
+}
+.YT{
+    color:red;
+    font-size: 35px;
+}
+.YT:hover{
+    color:rgb(122, 12, 12);
+}
+.YT:active{
+    color:gray;
+}
+.insta{
+    font-size:35px;
+}
+.insta:hover{
+    color:purple;
+}
+.insta:active{
+    color:gold;
+}
+.twitterbird{
+    font-size:35px;
+    color:rgb(29, 161, 242);
+}
+.twitterbird:hover{
+    color:rgb(5, 110, 152)
+}
+.twitterbird:active{
+    color:rgb(169, 216, 255);
+}
+.First{
+    height:400px;
+}
+.Second{
+    height:400px;
+}
+.Third{
+    height:400px;
+}
+.Fourth{
+    height:400px;
+}
